@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuEffettuata"
+        android:title="Segna come effettuata" />
+    <item
+        android:id="@+id/menuDisdici"
+        android:title="Disdici prenotazione" />
+
+</menu>

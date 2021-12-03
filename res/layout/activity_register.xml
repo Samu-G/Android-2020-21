@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <Spinner
+        android:id="@+id/spinnerRuolo"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="Ruolo"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/passwordRegister"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordRegister"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegister" />
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="La tua email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/surnameRegister"
+        app:layout_constraintStart_toStartOf="@+id/surnameRegister"
+        app:layout_constraintTop_toBottomOf="@+id/surnameRegister" />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="La tua password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/emailRegister"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailRegister"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegister" />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Registrati!"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerRuolo"
+        app:layout_constraintStart_toStartOf="@+id/spinnerRuolo"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRuolo" />
+
+    <EditText
+        android:id="@+id/nameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Il tuo nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/surnameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Il tuo cognome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/nameRegister"
+        app:layout_constraintStart_toStartOf="@+id/nameRegister"
+        app:layout_constraintTop_toBottomOf="@+id/nameRegister" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
